@@ -25,7 +25,7 @@ Anything not mentioned in this list is to be regarded as OUT OF SCOPE
 1. **Action**: Navigate to `URL`
 2. **Expected Result**: `target` homepage loads successfully
 3. **Verification**: Page title contains [value] and main navigation is visible
-4. **Screenshot**: 
+4. **Screenshot**: ...
 
 #### Step 2: Specify action to take
 

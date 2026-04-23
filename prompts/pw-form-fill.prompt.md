@@ -2,7 +2,9 @@
 mode: agent
 ----
 
-Navigate to "https://practice-automation.com/form-fields/" and fill out the form with the following information:
+[TARGET_URL]: https://practice-automation.com/form-fields/
+
+Navigate to [TARGET_URL] and fill out the form with the following information:
 1. Name: John Doe
 2. Password: password123
 3. Favorite drink: coffee
