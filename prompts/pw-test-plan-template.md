@@ -1,4 +1,5 @@
 # [PROJECT NAME] TEST PLAN
+
 ## [FEATURE UNDER TEST]
 
 ### Test Overview
@@ -7,7 +8,7 @@ Succinct description of objectives; answers "what", "why", "how", "when"
 
 ### Test Prerequisites
 
-- Browser: 
+- Browser: ...
 - Target URL:
 - Feature Branch (if applicable):
 - Test Data (if applicable):
@@ -22,7 +23,7 @@ Anything not mentioned in this list is to be regarded as OUT OF SCOPE
 #### Step 1: Navigate to
 
 1. **Action**: Navigate to `URL`
-2. **Expected Result**: <target> homepage loads successfully
+2. **Expected Result**: `target` homepage loads successfully
 3. **Verification**: Page title contains [value] and main navigation is visible
 4. **Screenshot**: 
 
