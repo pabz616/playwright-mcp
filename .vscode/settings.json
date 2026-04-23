@@ -1,4 +1,10 @@
 {
   "snyk.advanced.organization": "da41c350-f466-4c5b-9a5b-1b7ef925daad",
-  "snyk.advanced.autoSelectOrganization": true
+  "snyk.advanced.autoSelectOrganization": true,
+  "chat.tools.terminal.autoApprove": {
+    "/^cd /Users/pablovergara/Desktop/automation/playwright-mcp && node <<'EOF'\nconst \\{ chromium \\} = require\\('playwright'\\);\n\\(async \\(\\) => \\{\n  const browser = await chromium\\.launch\\(\\);\n  const page = await browser\\.newPage\\(\\);\n  await page\\.goto\\('https://practice-automation\\.com/form-fields/', \\{ waitUntil: 'domcontentloaded' \\}\\);\n  const fields = await page\\.\\$\\$eval\\('input, textarea, select, button', els => els\\.map\\(el => \\(\\{\n    tag: el\\.tagName\\.toLowerCase\\(\\),\n    type: el\\.type \\|\\| null,\n    name: el\\.name \\|\\| null,\n    id: el\\.id \\|\\| null,\n    placeholder: el\\.placeholder \\|\\| null,\n    label: \\(\\(\\) => \\{\n      const id = el\\.id;\n      if \\(!id\\) return null;\n      const label = document\\.querySelector\\(`label\\[for=\"\\$\\{id\\}\"\\]`\\);\n      return label \\? label\\.innerText\\.trim\\(\\) : null;\n    \\}\\)\\(\\),\n    text: el\\.innerText\\.trim\\(\\) \\|\\| null\n  \\}\\)\\)\\);\n  console\\.log\\(fields\\);\n  await browser\\.close\\(\\);\n\\}\\)\\(\\);\nEOF$/": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  }
 }
