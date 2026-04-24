@@ -10,10 +10,10 @@ MCP + Playwright
 
 # GOALS
 
-✅ Comprehensive form testing across distinct scenarios (F.U.R.P.S +)
-✅ WCAG 2.2 accessibility compliance analysis
-✅ Professional reports in both Markdown and JSON formats
-✅ Clear recommendations for improvements
+- ✅ Comprehensive form testing across distinct scenarios (F.U.R.P.S +)
+- ✅ WCAG 2.2 accessibility compliance analysis
+- ✅ Professional reports in both Markdown and JSON formats
+- ✅ Clear recommendations for improvements
 
 ### DIRECTIONS
 
