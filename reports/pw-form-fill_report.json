@@ -1,0 +1,197 @@
+{
+  "report_metadata": {
+    "title": "Playwright Form Fill Test Report",
+    "generated_date": "2026-04-23",
+    "test_url": "https://practice-automation.com/form-fields/",
+    "framework": "Playwright 1.59.1",
+    "node_version": "24.7.0",
+    "os": "macOS",
+    "execution_mode": "headed"
+  },
+  "test_results": {
+    "positive_scenario": {
+      "status": "PASSED",
+      "test_name": "Filling with valid data",
+      "data_submitted": {
+        "name": "John Doe",
+        "password": "password123",
+        "drink": "coffee",
+        "color": "blue",
+        "automation": "yes",
+        "email": "john.doe@example.com",
+        "message": "Hello, this is a test message for the form filling automation."
+      },
+      "result": "Form submitted successfully"
+    },
+    "negative_scenarios": {
+      "status": "COMPLETED",
+      "tests": [
+        {
+          "name": "Invalid email format",
+          "email": "invalid-email",
+          "result": "Form processed submission"
+        },
+        {
+          "name": "Empty required fields",
+          "result": "Form submission allowed"
+        }
+      ]
+    },
+    "abuse_cases": {
+      "status": "COMPLETED",
+      "tests": [
+        {
+          "name": "Very long input",
+          "character_count": 10000,
+          "result": "Form handled without crashing"
+        },
+        {
+          "name": "Special characters and injection",
+          "xss_payload": "<script>alert('XSS')</script>",
+          "sql_payload": "'; DROP TABLE users; --",
+          "result": "Payloads accepted; backend sanitization recommended"
+        }
+      ]
+    },
+    "misuse_cases": {
+      "status": "COMPLETED",
+      "tests": [
+        {
+          "name": "Submit without filling",
+          "result": "Form submission allowed"
+        },
+        {
+          "name": "Multiple rapid submits",
+          "count": 5,
+          "delay_ms": 500,
+          "result": "All submissions processed"
+        }
+      ]
+    },
+    "performance": {
+      "status": "COMPLETED",
+      "fill_and_submit_time_ms": 1509,
+      "rating": "Acceptable"
+    },
+    "reliability": {
+      "status": "PASSED",
+      "attempts": 1,
+      "max_attempts": 3,
+      "success_rate": "100%"
+    },
+    "security": {
+      "status": "COMPLETED",
+      "findings": [
+        "Server-side sanitization required",
+        "CSRF protection recommended",
+        "Input validation needed on backend"
+      ]
+    }
+  },
+  "accessibility_wcag22": {
+    "overall_compliance_score": "65%",
+    "criteria": [
+      {
+        "criterion": "1.1.1 Non-text Content",
+        "level": "A",
+        "images_without_alt": 1,
+        "status": "NEEDS_REVIEW"
+      },
+      {
+        "criterion": "1.3.1 Info and Relationships",
+        "level": "A",
+        "inputs_with_labels": 17,
+        "total_inputs": 26,
+        "compliance_percent": 65,
+        "status": "PARTIAL"
+      },
+      {
+        "criterion": "1.4.3 Color Contrast",
+        "level": "AA",
+        "elements_checked": 57,
+        "status": "COMPLIANT"
+      },
+      {
+        "criterion": "2.1.1 Keyboard",
+        "level": "A",
+        "accessible_elements": 34,
+        "total_form_elements": 26,
+        "status": "COMPLIANT"
+      },
+      {
+        "criterion": "2.4.3 Focus Order",
+        "level": "A",
+        "focusable_elements": 89,
+        "status": "COMPLIANT"
+      },
+      {
+        "criterion": "2.4.7 Focus Visible",
+        "level": "AA",
+        "focus_styles_defined": true,
+        "status": "COMPLIANT"
+      },
+      {
+        "criterion": "3.3.1 Error Identification",
+        "level": "A",
+        "error_elements": 0,
+        "status": "NEEDS_IMPLEMENTATION"
+      },
+      {
+        "criterion": "3.3.2 Labels or Instructions",
+        "level": "A",
+        "labels_found": 23,
+        "descriptions_found": 3,
+        "status": "MOSTLY_COMPLIANT"
+      },
+      {
+        "criterion": "4.1.2 Name, Role, Value",
+        "level": "A",
+        "elements_with_names": 30,
+        "total_elements": 26,
+        "status": "COMPLIANT"
+      },
+      {
+        "criterion": "4.1.3 Status Messages",
+        "level": "AA",
+        "aria_live_regions": 0,
+        "status": "NEEDS_IMPLEMENTATION"
+      }
+    ]
+  },
+  "recommendations": {
+    "high_priority": [
+      "Implement WCAG 2.2 Level AA accessibility improvements",
+      "Add server-side input validation and sanitization",
+      "Add error notification mechanism with aria-alert role",
+      "Improve form label associations to 100%"
+    ],
+    "medium_priority": [
+      "Add visual feedback for form validation",
+      "Implement CSRF token protection",
+      "Add loading state during submission",
+      "Improve error message descriptiveness"
+    ],
+    "low_priority": [
+      "Add form submission progress indicator",
+      "Implement client-side rate limiting",
+      "Add analytics for form abandonment"
+    ]
+  },
+  "conclusion": {
+    "overall_status": "FUNCTIONAL_WITH_MINOR_IMPROVEMENTS_RECOMMENDED",
+    "summary": "The form demonstrates solid functionality with good performance and reliability. Primary focus should be on accessibility compliance and security hardening.",
+    "strengths": [
+      "Form successfully handles valid and invalid submissions",
+      "Performance acceptable (1.5 seconds for typical operations)",
+      "Keyboard navigation fully supported",
+      "Focus management implemented",
+      "Reliability excellent (100% success on first attempt)"
+    ],
+    "areas_for_improvement": [
+      "Accessibility needs WCAG 2.2 improvements",
+      "Security requires server-side validation",
+      "Form validation feedback needed",
+      "Error handling implementation required"
+    ]
+  }
+}

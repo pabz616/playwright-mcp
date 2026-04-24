@@ -9,6 +9,13 @@ src. `https://github.com/microsoft/playwright-mcp`
 installing server from VSCODE CLI - 
 `code --add-mcp '{"name":"playwright","command":"npx","args":["@playwright/mcp@latest"]}`
 
+# GOALS
+
+✅ Comprehensive form testing across distinct scenarios (F.U.R.P.S +)
+✅ WCAG 2.2 accessibility compliance analysis
+✅ Professional reports in both Markdown and JSON formats
+✅ Clear recommendations for improvements
+
 ### DIRECTIONS
 
 1. Create a local workspace, or use your project's working directory.
