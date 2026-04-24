@@ -4,10 +4,9 @@ MCP + Playwright
 
 ## OBJECTIVE
 
-Leverage Playwright's MCP to streamline automation workflows.
-src. `https://github.com/microsoft/playwright-mcp`
-installing server from VSCODE CLI - 
-`code --add-mcp '{"name":"playwright","command":"npx","args":["@playwright/mcp@latest"]}`
+- Leverage Playwright's MCP to streamline automation workflows.
+- src. `https://github.com/microsoft/playwright-mcp`
+- installing server from VSCODE CLI - `code --add-mcp '{"name":"playwright","command":"npx","args":["@playwright/mcp@latest"]}`
 
 # GOALS
 
@@ -37,13 +36,16 @@ Let's consider the following tasks and what can be automated with PW:
    1. Get a complete & thorough understanding of the feature being worked on. Requirements must be as specific as possible if they are to be used for drafting a test plan.
    2. Once all details have been ironed out. draft the test plan, test strategy, etc.
    3. Map out test cases accordingly --> Create an instruction markdown file.
+
 2. During Design:
    1. Study any wire frames or design comps for visual QA options.
    2. Conduct a cursory threat model (if applicable) or a "what happens if.." exercise. These will be come visual test scenarios.
+
 3. During Development:
    1. Test cases should accurately address positive, negative cases; use, abuse, and misuse cases.
    2. Use AI to fleshout any gaps.
    3. Get the document reviewed before testing.
+
 4. During Testing:
    1. Visit the site / section under test.
    2. Leverage AI to get all DOM elements.
